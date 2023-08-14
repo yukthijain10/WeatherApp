@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weatherbck"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="185dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="36dp"
+        android:text="Weather"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="306dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="28dp"
+        app:iconifiedByDefault="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location"
+        app:queryHint="Search here....">
+
+
+    </androidx.appcompat.widget.SearchView>
+
+    <TextView
+        android:id="@+id/updated"
+        android:layout_width="157dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="24dp"
+        android:text="Updated at"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search" />
+
+    <TextView
+        android:id="@+id/degree"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="44dp"
+        android:text="24 degree "
+        android:textAlignment="center"
+        android:textColor="@color/darkblue"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updated" />
+
+    <TextView
+        android:id="@+id/mintemp"
+        android:layout_width="103dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="8dp"
+        android:text="min temp "
+        android:textAlignment="center"
+        android:textColor="@color/darkblue"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/degree" />
+
+    <TextView
+        android:id="@+id/maxtemp"
+        android:layout_width="93dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="8dp"
+        android:text="max temp "
+        android:textAlignment="center"
+        android:textColor="@color/darkblue"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/degree" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="287dp"
+        android:layout_height="199dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="44dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mintemp"
+        app:srcCompat="@drawable/weather2" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
